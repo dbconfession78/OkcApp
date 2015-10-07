@@ -1,0 +1,1597 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.6.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "337dlu"
+			"$rowSpecs": "467dlu"
+		} ) {
+			name: "this"
+			"title": "Search Settings"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowOpened", "thisWindowOpened", true ) )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"minimumSize": new java.awt.Dimension( 23, 780 )
+				"preferredSize": new java.awt.Dimension( 619, 759 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "165dlu, left:166dlu"
+					"$rowSpecs": "top:442dlu, linegap, default:grow"
+				} ) {
+					name: "panel1"
+					"preferredSize": new java.awt.Dimension( 600, 746 )
+					"name": "panel1"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "163dlu"
+						"$rowSpecs": "top:min"
+					} ) {
+						name: "leftPanel"
+						"name": "leftPanel"
+						"preferredSize": new java.awt.Dimension( 297, 1000 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "left:155dlu"
+							"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, 13dlu, default, linegap, default, linegap, default, linegap, default, linegap, default"
+						} ) {
+							name: "leftInnerPanel"
+							"preferredSize": new java.awt.Dimension( 3245, 800 )
+							"name": "leftInnerPanel"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 101dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "orientationContainer"
+								"name": "orientationContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label1"
+									"text": "Search for:"
+									"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "orientationCombo"
+									"font": &Font1 new java.awt.Font( "Lucida Grande", 0, 12 )
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "men who like women"
+										addElement( "men who like women" )
+										addElement( "women who like men" )
+									}
+									"name": "orientation"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 72dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "radiusContainer"
+								"name": "radiusContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "Radius:"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "radiusCombo"
+									"font": #Font1
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Anywhere"
+										addElement( "Anywhere" )
+										addElement( "5" )
+										addElement( "10" )
+										addElement( "25" )
+										addElement( "50" )
+										addElement( "100" )
+										addElement( "250" )
+										addElement( "500" )
+									}
+									"preferredSize": new java.awt.Dimension( 150, 27 )
+									"name": "radius"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 3
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 82dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "lastOnlineContainer"
+								"name": "lastOnlineContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label3"
+									"text": "Last online:"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "lastOnlineCombo"
+									"font": #Font1
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "online now"
+										addElement( "online now" )
+										addElement( "past day" )
+										addElement( "past week" )
+										addElement( "past month" )
+										addElement( "past year" )
+									}
+									"name": "last_login"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 5
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 101dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "panel20"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label4"
+									"text": "Ages:"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, default, default"
+									"$rowSpecs": "default"
+								} ) {
+									name: "agePanel"
+									"name": "agePanel"
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "minAgeText"
+										"preferredSize": new java.awt.Dimension( 50, 28 )
+										"text": "18"
+										"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+										"name": "minimum_age"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 1
+										"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label5"
+										"text": "-"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 2
+										"gridY": 1
+										"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+										"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "maxAgeText"
+										"preferredSize": new java.awt.Dimension( 50, 28 )
+										"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+										"name": "maximum_age"
+										"text": "99"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 1
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 7
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 101dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "orderByContainer"
+								"name": "orderByContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label6"
+									"text": "Sort by:"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JComboBox" ) {
+									name: "orderByCombo"
+									"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+									"model": new javax.swing.DefaultComboBoxModel {
+										selectedItem: "Login"
+										addElement( "Login" )
+										addElement( "Join" )
+										addElement( "Match" )
+										addElement( "Match and Login" )
+										addElement( "Match and Distance" )
+										addElement( "Enemy" )
+										addElement( "Special blend" )
+										addElement( "Random" )
+									}
+									"preferredSize": new java.awt.Dimension( 150, 27 )
+									"name": "order_by"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 9
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "44dlu, labelcompgap, left:28dlu, labelcompgap, 72dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "visitsContainer"
+								"name": "visitsContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label40"
+									"text": "# Visits:"
+									"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "runVisitsText"
+									"preferredSize": new java.awt.Dimension( 50, 28 )
+									"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+									"name": "limit"
+									"text": "50"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "autohideCheckBox"
+									"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+									"name": "autoHide"
+									"text": "Auto-Hide"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+									"gridX": 5
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 11
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, left:28dlu, labelcompgap, 72dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "visitDelayContainer"
+								"name": "visitDelayContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label42"
+									"text": "Visit Delay:"
+									"font": &Font2 new java.awt.Font( "Lucida Grande", 0, 12 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "visitDelayText"
+									"preferredSize": new java.awt.Dimension( 50, 28 )
+									"font": #Font2
+									"text": "10.5"
+									"name": "visitDelay"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "autoDeleteInboxCheckBox"
+									"text": "Auto-delete inbox"
+									"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+									"name": "autoDeleteInbox"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+									"gridX": 5
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 13
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, 101dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "heightContainer"
+								"name": "heightContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label25"
+									"text": "Height:"
+									"font": &Font3 new java.awt.Font( "Lucida Grande", 0, 12 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, center:default, default"
+									"$rowSpecs": "default"
+								} ) {
+									name: "heightPanel"
+									"preferredSize": new java.awt.Dimension( 158, 25 )
+									"name": "heightPanel"
+									add( new FormComponent( "javax.swing.JComboBox" ) {
+										name: "minHeightCombo"
+										"font": &Font4 new java.awt.Font( "Lucida Grande", 0, 12 )
+										"preferredSize": new java.awt.Dimension( 75, 28 )
+										"model": new javax.swing.DefaultComboBoxModel {
+											selectedItem: "5'0\""
+											addElement( "5'0\"" )
+											addElement( "5'1\"" )
+											addElement( "5'2\"" )
+											addElement( "5'3\"" )
+											addElement( "5'4\"" )
+											addElement( "5'5\"" )
+											addElement( "5'6\"" )
+											addElement( "5'7\"" )
+											addElement( "5'8\"" )
+											addElement( "5'9\"" )
+											addElement( "5'10\"" )
+											addElement( "5'11\"" )
+											addElement( "6'0\"" )
+											addElement( "6'1\"" )
+											addElement( "6'2\"" )
+											addElement( "6'3\"" )
+											addElement( "6'4\"" )
+										}
+										"name": "minimum_height"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label26"
+										"text": "-"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 2
+										"gridY": 1
+										"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+										"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+									} )
+									add( new FormComponent( "javax.swing.JComboBox" ) {
+										name: "maxHeightCombo"
+										"font": #Font4
+										"preferredSize": new java.awt.Dimension( 75, 28 )
+										"model": new javax.swing.DefaultComboBoxModel {
+											selectedItem: "6'4\""
+											addElement( "6'4\"" )
+											addElement( "6'3\"" )
+											addElement( "6'2\"" )
+											addElement( "6'1\"" )
+											addElement( "6'0\"" )
+											addElement( "5'11\"" )
+											addElement( "5'10\"" )
+											addElement( "5'9\"" )
+											addElement( "5'8\"" )
+											addElement( "5'7\"" )
+											addElement( "5'6\"" )
+											addElement( "5'5\"" )
+											addElement( "5'4\"" )
+											addElement( "5'3\"" )
+											addElement( "5'2\"" )
+											addElement( "5'1\"" )
+											addElement( "5'0\"" )
+										}
+										"name": "maximum_height"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 1
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 15
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							} )
+							add( new FormComponent( "javax.swing.JSeparator" ) {
+								name: "separator1"
+								"foreground": new java.awt.Color( 0, 0, 0, 255 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 16
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "33dlu, labelcompgap, 120dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "ethnicityContainer"
+								"name": "ethnicityContainer"
+								"border": &MatteBorder0 new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label38"
+									"text": "Ethnicity:"
+									"font": #Font3
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+									"insets": new java.awt.Insets( 5, 5, 0, 0 )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, labelcompgap, default"
+									"$rowSpecs": "default, default, default, default, default"
+								} ) {
+									name: "ethnicitySelectionPanel"
+									"name": "ethnicitySelectionPanel"
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "whiteCheckBox"
+										"text": "White"
+										"name": "white"
+										"font": &Font5 new java.awt.Font( "Lucida Grande", 0, 10 )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "asianCheckBox"
+										"text": "Asian"
+										"font": #Font5
+										"name": "asian"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "blackCheckBox"
+										"text": "Black"
+										"font": #Font5
+										"name": "black"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 2
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "hispanicCheckBox"
+										"text": "Hispanic"
+										"font": #Font5
+										"name": "hispanic_latin"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 2
+										"gridX": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "indianCheckBox"
+										"text": "Indian"
+										"font": #Font5
+										"name": "indian"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "middleEasternCheckBox"
+										"text": "Middle-Eastern"
+										"font": #Font5
+										"name": "middle_eastern"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+										"gridX": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "nativeAmericanCheckBox"
+										"text": "Native American"
+										"font": #Font5
+										"name": "native_american"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 4
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "pacificIslanderCheckBox"
+										"text": "Pacific Islander"
+										"font": #Font5
+										"name": "pacific_islander"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 4
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "otherEthnicityCheckBox"
+										"text": "Other"
+										"font": #Font5
+										"name": "other_ethnicity"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 5
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 17
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "48dlu, labelcompgap, left:105dlu"
+								"$rowSpecs": "default:grow"
+							} ) {
+								name: "bodyTypeContainer"
+								"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+								"name": "bodyTypeContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label36"
+									"text": "Body Type:"
+									"font": #Font3
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+									"insets": new java.awt.Insets( 5, 5, 0, 0 )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "54dlu:grow, labelcompgap, default"
+									"$rowSpecs": "default, linegap, default, linegap, default, linegap, default"
+								} ) {
+									name: "bodyTypeSelectionPanel"
+									"name": "bodyTypeSelectionPanel"
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "thinCheckbox"
+										"text": "Thin"
+										"font": &Font6 new java.awt.Font( "Lucida Grande", 0, 10 )
+										"name": "thin"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "fitCheckbox"
+										"text": "Fit"
+										"font": #Font6
+										"name": "fit"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 1
+										"gridX": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "averageBodyCheckbox"
+										"text": "Average"
+										"font": #Font6
+										"preferredSize": new java.awt.Dimension( 72, 20 )
+										"name": "averageBody"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "curvyCheckbox"
+										"text": "Curvy"
+										"font": #Font6
+										"name": "curvy"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+										"gridX": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "jackedCheckbox"
+										"text": "Jacked"
+										"font": #Font6
+										"name": "jacked"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 5
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "fullFiguredCheckbox"
+										"text": "Full figured"
+										"font": #Font6
+										"name": "fullFigured"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 5
+										"gridX": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "aLittleExtraCheckbox"
+										"text": "A little extra"
+										"font": #Font6
+										"name": "aLittleExtra"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 7
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "overweightCheckbox"
+										"text": "Overweight"
+										"font": #Font6
+										"name": "overweight"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 7
+										"gridX": 3
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 19
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "right:48dlu, labelcompgap, 105dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "attractivenessContainer"
+								"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+								"name": "attractivenessContainer"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label35"
+									"text": "Attractiveness:"
+									"font": #Font3
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+									"insets": new java.awt.Insets( 5, 5, 0, 0 )
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, 67dlu"
+									"$rowSpecs": "default, linegap, default"
+								} ) {
+									name: "attractivenessSelectionPanel"
+									"name": "attractivenessSelectionPanel"
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "averageAttractivenessCheckbox"
+										"text": "Average"
+										"font": &Font7 new java.awt.Font( "Lucida Grande", 0, 10 )
+										"name": "averageAttractiveness"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "aboveAverageCheckbox"
+										"text": "Above Average"
+										"font": #Font7
+										"name": "aboveAverage"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 2
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "hotCheckbox"
+										"text": "Hot"
+										"font": #Font7
+										"name": "hot"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridY": 3
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 21
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "48dlu, labelcompgap, 105dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "religionContainer"
+								"name": "religionContainer"
+								"font": &Font8 new java.awt.Font( "Lucida Grande", 0, 10 )
+								"border": #MatteBorder0
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label24"
+									"text": "Religion:"
+									"font": #Font3
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+									"insets": new java.awt.Insets( 5, 5, 0, 0 )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, labelcompgap, default"
+									"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default"
+								} ) {
+									name: "religionSelectionPanel"
+									"font": #Font8
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "agnosticismCheckBox"
+										"text": "Agnosticism"
+										"font": #Font8
+										"name": "agnosticism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "atheismCheckBox"
+										"text": "Atheism"
+										"font": #Font8
+										"name": "atheism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "buddhismCheckBox"
+										"text": "Buddhism"
+										"font": #Font8
+										"name": "buddhism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "catholicismCheckBox"
+										"text": "Catholicism"
+										"font": #Font8
+										"name": "catholicism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 3
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "christianityCheckBox"
+										"text": "Christianity"
+										"font": #Font8
+										"name": "christianity"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 5
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "hinduismCheckBox"
+										"text": "Hinduism"
+										"font": #Font8
+										"name": "hinduism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 5
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "judaismCheckBox"
+										"text": "Judaism"
+										"font": #Font8
+										"name": "judaism"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 7
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "islamCheckBox"
+										"text": "Islam"
+										"font": #Font8
+										"name": "islam"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 7
+									} )
+									add( new FormComponent( "javax.swing.JCheckBox" ) {
+										name: "otherReligionCheckBox"
+										"text": "Other"
+										"font": #Font8
+										"name": "other_religion"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 9
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 23
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "48dlu, labelcompgap, 105dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "childrenContainer"
+								"name": "childrenContainer"
+								"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+								"visible": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label32"
+									"text": "Children:"
+									"font": #Font3
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+									"insets": new java.awt.Insets( 5, 5, 0, 0 )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default"
+									"$rowSpecs": "default, 5dlu, default"
+								} ) {
+									name: "mainChildrenPanel"
+									"name": "mainChildrenPanel"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+										"$columnSpecs": "50dlu, labelcompgap, default"
+										"$rowSpecs": "default, linegap, default"
+									} ) {
+										name: "subChildrenPanel1"
+										"name": "subChildrenPanel1"
+										add( new FormComponent( "javax.swing.JCheckBox" ) {
+											name: "wantsCheckBox"
+											"text": "Wants kids"
+											"font": #Font7
+											"name": "wants_kids"
+										}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+											"gridX": 1
+											"gridY": 1
+										} )
+										add( new FormComponent( "javax.swing.JCheckBox" ) {
+											name: "mightWantCheckBox"
+											"text": "Might want"
+											"font": #Font7
+											"name": "might_want"
+										}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+											"gridX": 3
+											"gridY": 1
+										} )
+										add( new FormComponent( "javax.swing.JCheckBox" ) {
+											name: "doesntWantCheckBox"
+											"text": "Doesn't want"
+											"font": #Font7
+											"name": "doesnt_want"
+										}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+											"gridY": 3
+											"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+										} )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+									add( new FormComponent( "javax.swing.JSeparator" ) {
+										name: "separator3"
+										"foreground": new java.awt.Color( 0, 0, 0, 255 )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 2
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+										"$columnSpecs": "41dlu, labelcompgap, default"
+										"$rowSpecs": "default"
+									} ) {
+										name: "subChildrenPanel2"
+										"name": "subChildrenPanel2"
+										add( new FormComponent( "javax.swing.JCheckBox" ) {
+											name: "hasKidsCheckBox"
+											"text": "Has kids"
+											"font": &Font9 new java.awt.Font( "Lucida Grande", 0, 10 )
+											"name": "has_kids"
+											"borderPaintedFlat": true
+											"border": &MatteBorder1 new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+										}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+											"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+										} )
+										add( new FormComponent( "javax.swing.JCheckBox" ) {
+											name: "doesnthaveCheckBox"
+											"text": "Doesn't have"
+											"font": #Font9
+											"name": "doesnt_have"
+											"borderPaintedFlat": true
+											"border": #MatteBorder1
+										}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+											"gridX": 3
+										} )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 3
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 25
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+						"insets": new java.awt.Insets( 10, 10, 0, 0 )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "165dlu"
+						"$rowSpecs": "164dlu, 8dlu, 35dlu, linegap, default, linegap, default, linegap, default, linegap, default"
+					} ) {
+						name: "rightPanel"
+						"preferredSize": new java.awt.Dimension( 344, 1000 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "default, labelcompgap, left:default, labelcompgap, left:55dlu"
+							"$rowSpecs": "pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref, linegap, pref"
+						} ) {
+							name: "advancedFiltersPanel"
+							"preferredSize": new java.awt.Dimension( 344, 432 )
+							"minimumSize": new java.awt.Dimension( 314, 390 )
+							"name": "advancedFiltersPanel"
+							"visible": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label8"
+								"text": "Personality"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label9"
+								"text": "Degree"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"insets": new java.awt.Insets( 0, 5, 0, 0 )
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label10"
+								"text": "Importance"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								"insets": new java.awt.Insets( 0, 5, 0, 0 )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label11"
+								"text": "Agressiveness"
+								"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "aggressivenessDegCombo"
+								"model": &DefaultComboBoxModel0 new javax.swing.DefaultComboBoxModel {
+									selectedItem: "0"
+									addElement( "0" )
+									addElement( "2500" )
+									addElement( "5000" )
+									addElement( "7500" )
+									addElement( "10000" )
+								}
+								"font": &Font10 new java.awt.Font( "Lucida Grande", 0, 12 )
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "aggressivenessDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "aggressivenessImpCombo"
+								"model": &DefaultComboBoxModel1 new javax.swing.DefaultComboBoxModel {
+									selectedItem: "0"
+									addElement( "0" )
+									addElement( "5" )
+									addElement( "10" )
+								}
+								"font": &Font11 new java.awt.Font( "Lucida Grande", 0, 12 )
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "aggressivenessImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label12"
+								"text": "Athleticisim"
+								"font": &Font12 new java.awt.Font( "Lucida Grande", 0, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 5
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "athleticismDegCombo"
+								"model": #DefaultComboBoxModel0
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "athleticismDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 5
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "athleticismImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "athleticismImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 5
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label13"
+								"text": "Cockiness"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 7
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "cockinessDegCombo"
+								"model": &DefaultComboBoxModel2 new javax.swing.DefaultComboBoxModel {
+									selectedItem: "0"
+									addElement( "0" )
+									addElement( "2500" )
+									addElement( "5000" )
+									addElement( "7500" )
+									addElement( "10000" )
+								}
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "cockinessDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 7
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "cockinessImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "cockinessImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 7
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label14"
+								"text": "Dorkiness"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 9
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "dorkinessDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "dorkinessDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 9
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "dorkinessImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "dorkinessImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 9
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label15"
+								"text": "Independence"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 11
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "independenceDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "independenceDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 11
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "independenceImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "independenceImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 11
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label16"
+								"text": "Indie"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 13
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "indieDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "indieDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 13
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "indieImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "indieImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 13
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label17"
+								"text": "Introversion"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 15
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "introversionDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "introversionDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 15
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "introversionImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "introversionImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 15
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label18"
+								"text": "Old Fashionedness"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 17
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "oldFashinednessDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "oldFashinednessDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 17
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "oldFashinednessImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "oldFashinednessImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 17
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label19"
+								"text": "Planning"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 19
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "planningDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "planningDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 19
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "planningImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "planningImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 19
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label20"
+								"text": "Political"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 21
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "politicalDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "politicalDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 21
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "politicalImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "politicalImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 21
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label21"
+								"text": "Sexual Experience"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 23
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "sexualExperienceDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "sexualExperienceDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 23
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "sexualExperienceImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "sexualExperienceImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 23
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label22"
+								"text": "Socially Free"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 25
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "sociallyFreeDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "sociallyFreeDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 25
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "sociallyFreeImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "sociallyFreeImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 25
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label23"
+								"text": "Spirituality"
+								"font": #Font12
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 27
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "spiritualityDegCombo"
+								"model": #DefaultComboBoxModel2
+								"font": #Font10
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "spiritualityDeg"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 27
+								"gridX": 3
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "spiritualityImpCombo"
+								"model": #DefaultComboBoxModel1
+								"font": #Font11
+								"preferredSize": new java.awt.Dimension( 90, 22 )
+								"name": "spiritualityImp"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 5
+								"gridY": 27
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"insets": new java.awt.Insets( 10, 0, 0, 0 )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "37dlu, labelcompgap, 101dlu:grow"
+							"$rowSpecs": "default"
+						} ) {
+							name: "educationContainer"
+							"name": "educationContainer"
+							"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label33"
+								"text": "Education:"
+								"font": #Font3
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 5, 5, 0, 0 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default"
+								"$rowSpecs": "default, linegap, default"
+							} ) {
+								name: "educationSelectionPanel"
+								"name": "educationSelectionPanel"
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "highschoolCheckBox"
+									"text": "High school"
+									"font": &Font13 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "high_school"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "twoyearCollegeCheckBox"
+									"text": "2-year college"
+									"font": #Font13
+									"name": "two_year_college"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "universityCheckBox"
+									"text": "University"
+									"font": #Font13
+									"name": "college_university"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "postGradCheckBox"
+									"text": "Post grad"
+									"font": #Font13
+									"name": "post_grad"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 3
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 3
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "35dlu, labelcompgap, 104dlu"
+							"$rowSpecs": "default"
+						} ) {
+							name: "smokesContainer"
+							"name": "smokesContainer"
+							"border": &MatteBorder2 new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label27"
+								"text": "Smokes:"
+								"font": #Font3
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 5, 5, 0, 0 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default"
+								"$rowSpecs": "default, linegap, default, linegap, default"
+							} ) {
+								name: "smokesSelectionPanel"
+								"name": "smokesSelectionPanel"
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "yesCheckBox"
+									"text": "Yes"
+									"font": &Font14 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "yes"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "noCheckBox"
+									"text": "No"
+									"font": #Font14
+									"name": "no"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "whenDrinkingCheckBox"
+									"text": "When drinking"
+									"font": #Font14
+									"name": "when_drinking"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "sometimesSmokesCheckBox"
+									"text": "Sometimes"
+									"font": #Font14
+									"name": "sometimes_smokes"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "tryingToQuitCheckBox"
+									"text": "Trying to quit"
+									"font": #Font14
+									"name": "trying_to_quit"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 5
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 5
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "35dlu, labelcompgap, 101dlu"
+							"$rowSpecs": "default"
+						} ) {
+							name: "drinksContainer"
+							"name": "drinksContainer"
+							"border": #MatteBorder2
+							"visible": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label28"
+								"text": "Drinks:"
+								"font": #Font3
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 5, 5, 0, 0 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default"
+								"$rowSpecs": "default, linegap, default, linegap, default"
+							} ) {
+								name: "drinksSelectionPanel"
+								"name": "drinksSelectionPanel"
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "sociallyCheckBox"
+									"text": "Socially"
+									"font": &Font15 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "socially"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "oftenDrinksCheckBox"
+									"text": "Often"
+									"font": #Font15
+									"name": "often_drinks"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "rarelyCheckBox"
+									"text": "Rarely"
+									"font": #Font15
+									"name": "rarely"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "notAtAllCheckBox"
+									"text": "Not at all"
+									"font": #Font15
+									"name": "not_at_all"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "desperatelyCheckBox"
+									"text": "Desperately"
+									"font": #Font15
+									"name": "desperately"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 5
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "veryOftenCheckBox"
+									"text": "Very often"
+									"name": "very_often"
+									"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 5
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 7
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "34dlu, labelcompgap, 101dlu"
+							"$rowSpecs": "default"
+						} ) {
+							name: "drugsContainer"
+							"name": "drugsContainer"
+							"border": #MatteBorder2
+							"visible": false
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label29"
+								"text": "Drugs:"
+								"font": #Font3
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 5, 5, 0, 0 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default"
+								"$rowSpecs": "default, default"
+							} ) {
+								name: "drugsSelectionPanel"
+								"name": "drugsSelectionPanel"
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "everCheckBox"
+									"text": "Never"
+									"font": &Font16 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "never"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "sometimesDrugsCheckBox"
+									"text": "Sometimes"
+									"font": #Font16
+									"name": "sometimes_drugs"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+								} )
+								add( new FormComponent( "javax.swing.JCheckBox" ) {
+									name: "oftenDrugsCheckBox"
+									"text": "Often"
+									"font": #Font16
+									"name": "often_drugs"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 2
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 11
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "default, labelcompgap, default, labelcompgap, 39dlu"
+						"$rowSpecs": "default"
+					} ) {
+						name: "buttonPanel"
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "closeButton"
+							"text": "Close"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeButtonActionPerformed", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "resetButton"
+							"text": "Reset"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetButtonActionPerformed", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "applyButton"
+							"text": "Apply"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"preferredSize": new java.awt.Dimension( 70, 25 )
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "applyButtonActionPerformed", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							"gridX": 5
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 3
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"insets": new java.awt.Insets( 0, 10, 0, 0 )
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 810, 1005 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
+
+

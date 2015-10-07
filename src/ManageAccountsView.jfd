@@ -1,0 +1,208 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.6.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "136dlu"
+			"$rowSpecs": "top:138dlu, linegap, default"
+		} ) {
+			name: "this"
+			"title": "Login Settings"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "default, labelcompgap, 82dlu"
+				"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+			} ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 200, 250 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Username:"
+					"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 10 )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 1
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "usernameCombo"
+					"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+					"preferredSize": new java.awt.Dimension( 120, 27 )
+					"name": "username"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "usernameComboItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Password:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 3
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "passwordText"
+					"font": #Font0
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"name": "password"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "passwordTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Zip:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 5
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "zipText"
+					"font": #Font0
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"name": "zip"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "zipTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Proxy:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridY": 7
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "proxyText"
+					"font": #Font0
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"name": "proxy"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "proxyTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 7
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Port:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridY": 9
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "portText"
+					"font": #Font0
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"name": "port"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "portTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 9
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Proxy username:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 11
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "proxyUsernameText"
+					"font": #Font0
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"name": "proxyUsername"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "proxyUsernameTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 11
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Proxy Password:"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 13
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "proxyPasswordText"
+					"preferredSize": new java.awt.Dimension( 120, 25 )
+					"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+					"name": "proxyPassword"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "proxyPasswordTextKeyReleased", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 13
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 1
+				"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+				"insets": new java.awt.Insets( 10, 10, 0, 0 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "default, labelcompgap, default"
+				"$rowSpecs": "default, default"
+			} ) {
+				name: "buttonPanel"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addButton"
+					"text": "Add"
+					"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+					"name": "addButton"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteButton"
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "closeButton"
+					"text": "Close"
+					"font": &Font1 new java.awt.Font( "Lucida Grande", 0, 12 )
+					"preferredSize": new java.awt.Dimension( 86, 29 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+					"gridY": 2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "applyButton"
+					"text": "Apply"
+					"font": #Font1
+					"preferredSize": new java.awt.Dimension( 86, 29 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "applyButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+					"gridY": 2
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 290, 345 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

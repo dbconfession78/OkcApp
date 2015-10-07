@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Okc 4.1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Okc_4_1_jar</output-path>
+    <root id="archive" name="Okc 4.1.jar">
+      <element id="module-output" name="Okc 4.1" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-forms.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-common.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Libraries/javamail-1.4.7/mail.jar" path-in-jar="/" />
+      <element id="library" level="project" name="commons-codec-1.10" />
+    </root>
+  </artifact>
+</component>
