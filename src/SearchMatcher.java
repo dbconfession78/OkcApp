@@ -43,8 +43,6 @@ public class SearchMatcher {
                 cycleLimit = maxLimit;
             }
 
-
-
             generateJsonURL(cycleLimit);
         } catch (Exception e) {
             utils.println("FAILED TO CREATE SEARCH URL: the selected item, \"" + value + "\" from the \"" + next + "\" combobox must be defined in searchMatcher\n");

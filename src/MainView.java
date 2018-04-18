@@ -365,7 +365,7 @@ class MainView extends JFrame {
             enableScheduleMenuItems(true);
             initVisitorCountThread();
             visitorCountThread.start();
-//            loginButton.setText("Logout");
+            loginButton.setText("Logout");
             runButton.setEnabled(true);
             editButton.setEnabled(true);
 //            usernamesCombo.setEnabled(false);
@@ -1037,7 +1037,7 @@ class MainView extends JFrame {
                                             jLabel2.setText("Closed");
                                             jLabel.setForeground(Color.RED);
                                             jLabel2.setForeground(Color.RED);
-                                            String[] emailRecipients = new String[]{"sgkur04@gmail.com", "9736150121@vtext.com", "lshamdan90@gmail.com", "3364202797@vtext.com"};
+                                            String[] emailRecipients = new String[]{"sgkur04@gmail.com", "9736150121@vtext.com", /*"lshamdan90@gmail.com", "3364202797@vtext.com" */};
                                             utils.notify(
                                                     emailRecipients,
                                                     "OkcApp Auto-Notification",

@@ -59,7 +59,7 @@ public class CheckProfileView extends JFrame {
         ArrayList<String> usernames =  altAccountMgr.fetchUsernames();
         int numUsernames = usernames.size();
         if(numUsernames < 2) {
-            altAccountMgr.backupLogin("sgk2004", "hyrenkosa", "07086", "", "");
+            altAccountMgr.backupLogin("altemail@domain.com", "altpw", "altzip", "", "");
         } else {
             for (int i = 0; i < usernames.size(); i++) {
                 String username = usernames.get(i);

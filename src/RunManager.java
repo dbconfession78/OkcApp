@@ -97,6 +97,11 @@ public class RunManager implements Runnable {
                 }
                 searchMatcher = new SearchMatcher(accountMgr, searchSettingsMap);
                 searchURL = searchMatcher.getSearchURL();
+
+
+                searchURL = "https://www.okcupid.com/1/apitun/match/search"; // <---------- delete after testing and fixing
+
+
                 shouldHide = Boolean.valueOf(searchSettingsMap.get("auto_hide"));
                 visitDelay = (Double.parseDouble(searchSettingsMap.get("visit_delay")))*1000;
             } else {
@@ -253,7 +258,8 @@ public class RunManager implements Runnable {
             if (!shouldThrow) {
                 int runVisits = 0;
 
-                runVisits = Integer.parseInt(utils.findText(searchURL, "\"limit\":\"", "\""))+1;
+//                runVisits = Integer.parseInt(utils.findText(searchURL, "\"limit\":\"", "\""))+1;
+                runVisits = 41;
 
                 // half second pause
                 try {
@@ -264,7 +270,9 @@ public class RunManager implements Runnable {
 
                 vis = new URLVisitor(accountMgr);
                 vis.setURL(searchURL);
-                vis.setMethod("GET");
+//                vis.setMethod("GET");
+                vis.setMethod("POST");
+                vis.setParams("{\"order_by\":\"SPECIAL_BLEND\",\"gentation\":[34],\"gender_tags\":null,\"orientation_tags\":null,\"minimum_age\":26,\"maximum_age\":30,\"locid\":4232451,\"radius\":25,\"lquery\":\"\",\"location\":{\"postal_code\":\"\",\"nameid\":140058,\"display_state\":1,\"locid\":4232451,\"state_code\":\"CA\",\"country_name\":\"United States\",\"longitude\":-12232553,\"popularity\":1239,\"state_name\":\"California\",\"default_radius\":25,\"country_code\":\"US\",\"city_name\":\"San Mateo\",\"density\":10673,\"metro_area\":7360,\"latitude\":3756299},\"located_anywhere\":0,\"last_login\":2678400,\"i_want\":\"women\",\"they_want\":\"men\",\"minimum_height\":null,\"maximum_height\":null,\"languages\":0,\"speaks_my_language\":false,\"ethnicity\":[\"white\"],\"religion\":[],\"availability\":\"single\",\"monogamy\":\"unknown\",\"looking_for\":[\"short_term_dating\",\"long_term_dating\",\"new_friends\"],\"smoking\":[],\"drinking\":[],\"drugs\":[],\"answers\":[],\"interest_ids\":[],\"education\":[],\"children\":[],\"cats\":[],\"dogs\":[],\"tagOrder\":[\"ethnicity\",\"availability\",\"looking_for\"],\"save_search\":true,\"limit\":18,\"fields\":\"userinfo,thumbs,percentages,likes,last_contacts,online\"}");
                 vis.setSessionCookie(sessionCookie);
                 utils.println("\nGenerating search URL:", false);
                 utils.print(String.valueOf(vis.getURL()) + "\n", false);

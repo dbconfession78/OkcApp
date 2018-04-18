@@ -1,0 +1,973 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.6.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "max(default;168dlu):grow"
+			"$rowSpecs": "fill:207dlu:grow"
+		} ) {
+			name: "this"
+			"title": "OkcApp v4.1"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "146dlu:grow"
+				"$rowSpecs": "fill:12dlu, fill:162dlu, fill:26dlu"
+			} ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 300, 328 )
+				"name": "panel1"
+				"minimumSize": new java.awt.Dimension( 280, 284 )
+				"maximumSize": new java.awt.Dimension( 300, 330 )
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color black )
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar"
+					"name": "menuBar"
+					"preferredSize": new java.awt.Dimension( 155, 10 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "fileMenu"
+						"text": "File"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "quitMenuItem"
+							"text": "Quit"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quitMenuItemActionPerformed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "accountsMenu"
+						"text": "Accounts"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "manageAccountsMenuItem"
+							"text": "Manage Accounts"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "manageAccountsMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "addAccountMenuItem"
+							"text": "Add Account"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addAccountMenuItemActionPerformed", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "scheduleMenu"
+						"text": "Schedule"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						"name": "scheduleMenu"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 10
+						}
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "manageSchedulesMenuItem"
+							"text": "Manage Schedules"
+							"name": "manageSchedules"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "manageSchedulesMenuItemActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "center:85dlu"
+							"$rowSpecs": "default"
+						} ) {
+							name: "seperatorPanel"
+							"background": new java.awt.Color( 255, 255, 255, 255 )
+							"name": "seperatorPanel"
+							add( new FormComponent( "javax.swing.JSeparator" ) {
+								name: "separator1"
+								"foreground": new java.awt.Color( 0, 0, 0, 255 )
+								"preferredSize": new java.awt.Dimension( 150, 12 )
+								"name": "seperator1"
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 1
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 0, 5, 0, 5 )
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "default"
+							"$rowSpecs": "default"
+						} ) {
+							name: "scheduleMenuItemsPanel"
+							"name": "scheduleMenuItemsPanel"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "toolsmenu"
+						"text": "Tools"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						"name": "toolsMenu"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "clearAccountsMenuItem"
+							"text": "Clear Accounts"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "clearAccounts"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearAccountsMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "resetIndexMenuItem"
+							"text": "Reset Index"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "resetIndex"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetIndexActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "visitProfileMenuItem"
+							"text": "Visit Single Profile"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+							"name": "visitProfileMenuItem"
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "visitProfileMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "checkProfileMenuItem"
+							"text": "Check Profile"
+							"name": "checkProfileMenuItem"
+							"enabled": false
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkProfileMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "editAutoWatchListMenuItem"
+							"text": "Edit Auto-Watch List"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "editAutoWatchList"
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editAutoWatchListMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "deleteInboxMenuItem"
+							"text": "Delete Inbox"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"enabled": false
+							"name": "deleteInbox"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteInboxMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "openConsoleMenuItem"
+							"text": "Console"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "openConsole"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openConsoleMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "visitVisitorsMenuItem"
+							"text": "Visit Visitors"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "visitVisitors"
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "visitVisitorsMenuItemActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "hideVisitorsMenuItem"
+							"text": "Hide Visitors"
+							"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							"name": "hideVisitors"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "hideNewVisitorsMenuItemActionPerformed", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "81dlu, unrelgap, 123px"
+					"$rowSpecs": "166dlu:grow"
+				} ) {
+					name: "mainPanel"
+					"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+					"preferredSize": new java.awt.Dimension( 305, 355 )
+					"name": "mainPanel"
+					"minimumSize": new java.awt.Dimension( 250, 276 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "min"
+						"$rowSpecs": "bottom:default, default, 2dlu, 76dlu, linegap, default"
+					} ) {
+						name: "leftPanel"
+						"preferredSize": new java.awt.Dimension( 175, 325 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"minimumSize": new java.awt.Dimension( 150, 276 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "usernamesCombo"
+							"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+							"preferredSize": new java.awt.Dimension( 120, 27 )
+							"name": "usernames"
+							"visible": false
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "usernamesComboPropertyChange", true, "visible" ) )
+							addEvent( new FormEvent( "javax.swing.event.PopupMenuListener", "popupMenuWillBecomeInvisible", "usernamesComboPopupMenuWillBecomeInvisible", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "30dlu, 28dlu, 24dlu"
+							"$rowSpecs": "default"
+						} ) {
+							name: "buttonPanel"
+							"name": "buttonPanel"
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "loginButton"
+								"text": "Login"
+								"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								"preferredSize": new java.awt.Dimension( 70, 25 )
+								"name": "login"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 1
+								}
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "runButton"
+								"text": "Run"
+								"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								"preferredSize": new java.awt.Dimension( 70, 25 )
+								"name": "run"
+								"enabled": false
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 1
+								}
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "runButtonActionPerformed", true ) )
+								addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "runButtonPropertyChange", true, "visible" ) )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								"gridX": 2
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "stopButton"
+								"text": "Stop"
+								"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								"name": "stopButton"
+								"foreground": sfield java.awt.Color red
+								"visible": false
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stopButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+							"gridY": 2
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "76dlu"
+							"$rowSpecs": "top:60dlu, top:16dlu"
+						} ) {
+							name: "activityPanel"
+							"name": "activityPanel"
+							"preferredSize": new java.awt.Dimension( 117, 300 )
+							"border": new javax.swing.border.MatteBorder( 0, 0, 0, 0, sfield java.awt.Color black )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "34dlu, 25dlu:grow"
+								"$rowSpecs": "3dlu, 10dlu, linegap, min, linegap, default, linegap, default, linegap, default"
+							} ) {
+								name: "runPanel"
+								"name": "runPanel"
+								"preferredSize": new java.awt.Dimension( 200, 130 )
+								"border": new javax.swing.border.MatteBorder( 1, 0, 1, 0, sfield java.awt.Color black )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label8"
+									"text": "Current"
+									"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 10 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 2
+									"insets": new java.awt.Insets( 0, 2, 0, 0 )
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "resetRunButton"
+									"text": "Reset"
+									"preferredSize": new java.awt.Dimension( 50, 15 )
+									"font": new java.awt.Font( "Lucida Grande", 0, 9 )
+									"name": "resetRun"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetRunButtonActionPerformed", true ) )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 2
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+									"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label9"
+									"text": "- Visits"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 4
+									"insets": new java.awt.Insets( 0, 10, 0, 0 )
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "default, labelcompgap, 25dlu"
+									"$rowSpecs": "default"
+								} ) {
+									name: "runVisitsPanel"
+									"name": "runVisitsPanel"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "visitsCompletedUI"
+										"text": "0"
+										"font": &Font1 new java.awt.Font( "Lucida Grande", 0, 10 )
+										"name": "visitsCompleted"
+										addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "visitsCompletedUIPropertyChange", true ) )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 1
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "visitLimitUI"
+										"text": "of 0"
+										"font": &Font2 new java.awt.Font( "Lucida Grande", 0, 10 )
+										"name": "visitLimitUI"
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+										"gridY": 1
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 4
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "- Start"
+									"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 6
+									"insets": new java.awt.Insets( 0, 10, 0, 0 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "startTimeUI"
+									"text": "00:00"
+									"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "start_time"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 6
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label10"
+									"text": "- Elapsed"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 8
+									"insets": new java.awt.Insets( 0, 10, 0, 0 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "elapsedUI"
+									"text": "00:00:00"
+									"font": #Font2
+									"name": "elapsed"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label4"
+									"text": "- End"
+									"font": &Font3 new java.awt.Font( "Lucida Grande", 0, 10 )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 10
+									"insets": new java.awt.Insets( 0, 10, 0, 0 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "endTimeUI"
+									"text": "00:00 PM"
+									"font": #Font3
+									"name": "end_time"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"gridY": 10
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "33dlu, min, 3dlu, 21dlu"
+								"$rowSpecs": "10dlu"
+							} ) {
+								name: "totalPanel"
+								"name": "totalPanel"
+								"preferredSize": new java.awt.Dimension( 200, 60 )
+								"border": new javax.swing.border.MatteBorder( 0, 0, 1, 0, sfield java.awt.Color black )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label11"
+									"text": "Total Visits:"
+									"font": #Font0
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 1
+									"insets": new java.awt.Insets( 0, 2, 0, 0 )
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "totalVisitsUI"
+									"text": "0"
+									"font": #Font1
+									"name": "totalVisits"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 2
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "resetTotalButton"
+									"text": "Reset"
+									"font": new java.awt.Font( "Lucida Grande", 0, 9 )
+									"preferredSize": new java.awt.Dimension( 50, 15 )
+									"name": "resetTotal"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetTotalButtonActionPerformed", true ) )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 4
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 2
+								"insets": new java.awt.Insets( 5, 0, 0, 0 )
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 4
+							"insets": new java.awt.Insets( 0, 10, 0, 0 )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "default:grow"
+							"$rowSpecs": "default, linegap, default, linegap, default, linegap, default"
+						} ) {
+							name: "activeSchedulePanel"
+							"name": "activeSchedulePanel2"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default, labelcompgap, default"
+								"$rowSpecs": "default"
+							} ) {
+								name: "schedulePanel1"
+								"name": "schedulePanel1"
+								"visible": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleName1Label"
+									"font": &Font4 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "scheduleName1Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label21"
+									"text": "-"
+									"font": #Font4
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleTime1Label"
+									"font": #Font4
+									"name": "scheduleTime1Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 5
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 1
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default, labelcompgap, default"
+								"$rowSpecs": "default"
+							} ) {
+								name: "schedulePanel2"
+								"name": "schedulePanel2"
+								"visible": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleName2Label"
+									"font": #Font4
+									"name": "scheduleName2Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label24"
+									"text": "-"
+									"font": #Font4
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleTime2Label"
+									"font": #Font4
+									"name": "scheduleTime2Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 5
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 3
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default, labelcompgap, default"
+								"$rowSpecs": "default"
+							} ) {
+								name: "schedulePanel3"
+								"name": "schedulePanel3"
+								"visible": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleName3Label"
+									"font": #Font4
+									"name": "scheduleName3Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label27"
+									"text": "-"
+									"font": #Font4
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleTime3Label"
+									"font": #Font4
+									"name": "scheduleTime3Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 5
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 5
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "default, labelcompgap, default, labelcompgap, default"
+								"$rowSpecs": "default"
+							} ) {
+								name: "schedulePanel4"
+								"name": "schedulePanel4"
+								"visible": false
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleName4Label"
+									"font": #Font4
+									"name": "scheduleName4Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 1
+									"gridY": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label30"
+									"text": "-"
+									"font": #Font4
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"gridY": 1
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints CENTER
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "scheduleTime4Label"
+									"font": #Font4
+									"name": "scheduleTime4Label"
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 5
+									"gridY": 1
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 7
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 6
+							"insets": new java.awt.Insets( 0, 10, 0, 0 )
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "73dlu"
+						"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+					} ) {
+						name: "rightPanel"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+						"preferredSize": new java.awt.Dimension( 180, 250 )
+						"minimumSize": new java.awt.Dimension( 121, 276 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "default, labelcompgap, 28dlu"
+							"$rowSpecs": "22dlu"
+						} ) {
+							name: "settingsHeadingPanel"
+							"name": "settingsheadingPanel"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label1"
+								"text": "Settings"
+								"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 1
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "editButton"
+								"text": "Edit"
+								"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								"enabled": false
+								"preferredSize": new java.awt.Dimension( 70, 25 )
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 1
+								}
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "autoHideLabel"
+							"text": "- Auto-hide:"
+							"font": new java.awt.Font( "Lucida Grande", 2, 10 )
+							"name": "autoHideLabel"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "orientation"
+							"text": "- orientation"
+							"font": new java.awt.Font( "Lucida Grande", 2, 10 )
+							"name": "orientationSet"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 5
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "radius"
+							"text": "- search radius"
+							"font": &Font5 new java.awt.Font( "Lucida Grande", 2, 10 )
+							"name": "radiusSet"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 7
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "age"
+							"text": "- age"
+							"font": #Font5
+							"name": "ageSet"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 9
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "lastOnline"
+							"text": "- last online"
+							"font": #Font5
+							"name": "lastOnlineSet"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 11
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "orderBy"
+							"text": "- sort order"
+							"font": new java.awt.Font( "Lucida Grande", 2, 10 )
+							"name": "orderBySet"
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 13
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "72dlu:grow"
+							"$rowSpecs": "15dlu, linegap, 10dlu, 82dlu"
+						} ) {
+							name: "watchPanel"
+							"name": "watchPanel"
+							"font": &Font6 new java.awt.Font( "Lucida Grande", 0, 10 )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							add( new FormComponent( "javax.swing.JToggleButton" ) {
+								name: "autoWatchButton"
+								"text": "Auto-Watch"
+								"preferredSize": new java.awt.Dimension( 85, 29 )
+								"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+								"name": "autoWatch"
+								"enabled": false
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "autoWatchButtonActionPerformed", true ) )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								"insets": new java.awt.Insets( 0, -5, 0, 0 )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "71dlu"
+								"$rowSpecs": "default"
+							} ) {
+								name: "lastCheckedContainer"
+								"name": "lastCheckedContainer"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+									"$columnSpecs": "left:25dlu, center:10dlu, left:18dlu"
+									"$rowSpecs": "10dlu"
+								} ) {
+									name: "lastCheckedPanel"
+									"name": "lastCheckedPanel"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "lastCheckedLabel"
+										"name": "lastChecked"
+										"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+										"text": "00:00 AM"
+										"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label5"
+										"text": " / "
+										"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 2
+										"gridY": 1
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "nextCheckLabel"
+										"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+										"name": "nextCheckLabel"
+										"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+									}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+										"gridX": 3
+									} )
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+									"insets": new java.awt.Insets( 0, 2, 0, 0 )
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 3
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+								"$columnSpecs": "50dlu, 3dlu, 29dlu:grow"
+								"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default"
+							} ) {
+								name: "watchListPanel"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watch1"
+									"font": #Font6
+									"name": "watch1"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watchStatus1"
+									"text": "-"
+									"font": &Font7 new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "watchStatus1"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watch2"
+									"font": #Font6
+									"name": "watch2"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 3
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watchStatus2"
+									"text": "-"
+									"font": #Font7
+									"name": "watchStatus2"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 3
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watch3"
+									"font": #Font6
+									"name": "watch3"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 5
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watchStatus3"
+									"text": "-"
+									"font": #Font7
+									"name": "watchStatus3"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 5
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watch4"
+									"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "watch4"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 7
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watchStatus4"
+									"text": "-"
+									"font": #Font7
+									"name": "watchStatus4"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 7
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watch5"
+									"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+									"name": "watch5"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 9
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "watchStatus5"
+									"text": "-"
+									"font": #Font7
+									"name": "watchStatus5"
+									"visible": false
+								}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+									"gridY": 9
+									"gridX": 3
+									"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+								} )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridY": 4
+								"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+								"insets": new java.awt.Insets( 5, 4, 0, 0 )
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 15
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridY": 2
+					"insets": new java.awt.Insets( 5, 5, 0, 0 )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "144dlu:grow"
+					"$rowSpecs": "top:33dlu"
+				} ) {
+					name: "statusLineContainer"
+					"name": "statusLineContainer"
+					"border": new javax.swing.border.MatteBorder( 1, 0, 0, 0, sfield java.awt.Color black )
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"preferredSize": new java.awt.Dimension( 277, 60 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "75dlu:grow, right:20dlu:grow"
+						"$rowSpecs": "bottom:default:grow, narrowlinegap, default"
+					} ) {
+						name: "statusLinePanel"
+						"name": "statusLinePanel"
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "consoleOutputLabel"
+							"text": "Please log in."
+							"name": "consoleOutput"
+							"font": new java.awt.Font( "Lucida Grande", 2, 12 )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 10
+							}
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"insets": new java.awt.Insets( 0, 5, 0, 0 )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "left:30dlu:grow, relgap, left:14dlu"
+							"$rowSpecs": "bottom:default:grow"
+						} ) {
+							name: "nextVisitPanel"
+							"name": "nextVisitPanel"
+							"background": new java.awt.Color( 204, 204, 204, 255 )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label16"
+								"text": "Next visit:"
+								"name": "nextVisit"
+								"font": new java.awt.Font( "Lucida Grande", 2, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "nextVisitLabel"
+								"text": "-"
+								"name": "nextVisit"
+								auxiliary() {
+									"JavaCodeGenerator.variableModifiers": 10
+								}
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 2
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+							"$columnSpecs": "28dlu, labelcompgap, center:11dlu:grow"
+							"$rowSpecs": "default"
+						} ) {
+							name: "panel2"
+							"background": new java.awt.Color( 204, 204, 204, 255 )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "Visitors:"
+								"font": new java.awt.Font( "Lucida Grande", 2, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 1
+								"gridY": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "visitorCountLabel"
+								"text": "-"
+								"name": "visitorCount"
+								"font": new java.awt.Font( "Lucida Grande", 2, 12 )
+							}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+								"gridX": 3
+								"gridY": 1
+								"hAlign": sfield com.jgoodies.forms.layout.CellConstraints LEFT
+							} )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 3
+							"insets": new java.awt.Insets( 0, 5, 0, 0 )
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridY": 3
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 325, 360 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

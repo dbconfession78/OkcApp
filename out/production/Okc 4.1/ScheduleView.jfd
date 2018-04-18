@@ -1,0 +1,263 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.6.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "139dlu"
+			"$rowSpecs": "129dlu"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "123dlu"
+				"$rowSpecs": "default, linegap, top:default, linegap, default, linegap, default, linegap, 4dlu:grow"
+			} ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 250, 200 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default, labelcompgap, default:grow"
+					"$rowSpecs": "default"
+				} ) {
+					name: "schedTitlePanel"
+					"name": "schedTitlePanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Schedule Title:"
+						"font": new java.awt.Font( "Lucida Grande", 0, 12 )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "schedTitleComboBox"
+						"name": "schedTitleComboBox"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "schedTitleComboBoxActionPerformed", true ) )
+						addEvent( new FormEvent( "javax.swing.event.PopupMenuListener", "popupMenuWillBecomeInvisible", "schedTitleComboBoxPopupMenuWillBecomeInvisible", true ) )
+						addEvent( new FormEvent( "javax.swing.event.PopupMenuListener", "popupMenuWillBecomeVisible", "schedTitleComboBoxPopupMenuWillBecomeVisible", true ) )
+						addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "schedTitleComboBoxPropertyChange", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default"
+					"$rowSpecs": "default, linegap, default"
+				} ) {
+					name: "startTimeOuterPanel"
+					"name": "startTimeOuterPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "46dlu, labelcompgap, default, labelcompgap, center:2dlu, labelcompgap, 10dlu, labelcompgap, 11dlu"
+						"$rowSpecs": "default"
+					} ) {
+						name: "startTimeInnerPanel1"
+						"font": &Font0 new java.awt.Font( "Lucida Grande", 0, 12 )
+						"name": "startTimeInnerPanel1"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "Start Time:"
+							"font": &Font1 new java.awt.Font( "Lucida Grande", 0, 12 )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+							"insets": new java.awt.Insets( 0, 0, 0, 4 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startTimeHourLabel"
+							"text": "00"
+							"font": #Font0
+							"name": "startTimeHourLabel"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startTimeColonLabel1"
+							"text": ":"
+							"font": #Font0
+							"name": "startTimeColonLabel1"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 5
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startTimeMinuteLabel"
+							"text": "00"
+							"font": #Font0
+							"name": "startTimeMinuteLabel"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 7
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startTimeAmPmLabel"
+							"text": "AM"
+							"font": #Font0
+							"name": "startTimeAmPmLabel"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 9
+							"gridY": 1
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "43dlu, labelcompgap, 15dlu, labelcompgap, center:2dlu, labelcompgap, 17dlu, labelcompgap, 35dlu"
+						"$rowSpecs": "default"
+					} ) {
+						name: "startTimeInnerPanel2"
+						"font": #Font0
+						"name": "startTimeInnerPanel2"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "Start Time:"
+							"font": #Font1
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 1
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "startTimeHourTextField"
+							"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+							"name": "startTimeHourTextField"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startTimeColonLabel2"
+							"text": ":"
+							"font": #Font0
+							"name": "startTimeColonLabel2"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 5
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "startTimeMinuteTextField"
+							"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+							"name": "startTimeMinuteTextField"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 7
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "startTimeAmPmComboBox"
+							"font": new java.awt.Font( "Lucida Grande", 0, 10 )
+							"model": new javax.swing.DefaultComboBoxModel {
+								selectedItem: "AM"
+								addElement( "AM" )
+								addElement( "PM" )
+							}
+							"name": "startTimeAmPmComboBox"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 9
+							"gridY": 1
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 3
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 3
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "43dlu, 12dlu"
+					"$rowSpecs": "default"
+				} ) {
+					name: "freeRunPanel"
+					"name": "freeRunPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Free Run:"
+						"font": &Font2 new java.awt.Font( "Lucida Grande", 0, 12 )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 1
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "freeRunLabel"
+						"text": "off"
+						"font": #Font2
+						"name": "freeRunLabel"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 1
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints RIGHT
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 5
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default"
+					"$rowSpecs": "default"
+				} ) {
+					name: "searchPreferencesPanel"
+					"name": "searchPreferencesPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchPreferencesButton"
+						"text": "Search Preferences"
+						"name": "searchPreferencesButton"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchPreferencesButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 7
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default, 41dlu"
+					"$rowSpecs": "default, default"
+				} ) {
+					name: "buttonPanel"
+					"name": "buttonPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "editButton"
+						"text": "Edit"
+						"name": "editButton"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "removeButton"
+						"text": "Remove"
+						"name": "removeButton"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "removeButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "closeButton"
+						"text": "Close"
+						"name": "closeButton"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "newButton"
+						"text": "New"
+						"name": "newButton"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "newButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 2
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 9
+					"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 1
+				"gridY": 1
+				"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+				"insets": new java.awt.Insets( 10, 10, 0, 0 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 370, 315 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

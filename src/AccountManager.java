@@ -79,7 +79,6 @@ public class AccountManager {
         utils.println(String.valueOf(vis.getURL()), false);
         vis.execute();
         this.response = vis.getResponse();
-//        utils.println(this.response);
 
         pattern = Pattern.compile("\"locid\"\\s:\\s([0-9]+)");
         matcher = pattern.matcher(this.response);
@@ -99,7 +98,6 @@ public class AccountManager {
 
         utils.println("session=" + utils.findText(sessionCookie, "session=", ";") + "\n", false);
         this.response = vis.getResponse();
-//        utils.println(this.response);
 
         utils.println("Getting Authcode from Homepage...", false);
         vis = new URLVisitor(this);
@@ -114,7 +112,6 @@ public class AccountManager {
 
         extractAuthCode();
         protocol = vis.getProtocol();
-//        utils.println(this.response);
 
         pattern = Pattern.compile("body id=\"p_home\"");
         matcher = pattern.matcher(response);
@@ -172,7 +169,7 @@ public class AccountManager {
                     // regular login
                     utils.println("\nLogging in with:");
                     utils.println("username: " + aUsername);
-                    utils.println("password: " + password);
+//                    utils.println("password: " + password);
                     if(proxy.equals("")) {
                         utils.println("proxy: none\n");
                     } else {
@@ -246,6 +243,7 @@ public class AccountManager {
 
 
                 response = vis.getResponse();
+                System.out.println(response);
                 protocol = vis.getProtocol();
                 String targetString = utils.findString(response, "body id=\"p_home\"", 0);
                 if(!targetString.isEmpty()) {
@@ -363,7 +361,7 @@ public class AccountManager {
     }
 
     private void extractAuthCode() {
-        this.authCode = utils.findString(response, "authcode\"\\svalue=\"([0-9a-z,;%]+)\"", 1);
+        this.authCode = utils.findString(response, "var AUTHCODE = \"([a-zA-Z0-9;,]+)\"", 1);
         if(authCode != null) {
             utils.println("AUTHCODE: " + this.authCode);
             authCodeIsSet = true;
